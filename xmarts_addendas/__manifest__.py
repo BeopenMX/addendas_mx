@@ -1,6 +1,6 @@
 {
     'name': 'Xmarts Addendas',
-    'version': '13.1',
+    'version': '14.1',
     'category': '',
     'summary': 'Modulo para Agregar Addendas a la Factura.',
     'author': 'Xmarts',
