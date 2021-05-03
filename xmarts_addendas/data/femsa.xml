@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="femsa" name="Femsa">
+        <t t-set="invoice_type" t-value="{'out_invoice': '1', 'out_refund': '9'}"/>
+        <Addenda>
+            <Documento>
+                <FacturaFemsa>
+                    <noVersAdd>01</noVersAdd>
+                    <claseDoc t-raw="invoice_type.get(record.type)"/>
+                    <noSociedad t-esc="record.num_sociedad or '.'"/>
+                    <noProveedor t-esc="record.partner_id.num_proovedor or '.'"/>
+                    <noPedido t-esc="record.ref or '.'"/>
+                    <moneda t-raw="record.currency_id.name"/>
+                    <noEntrada t-esc="record.num_entrada or '.'"/>
+                    <noRemision t-esc="record.invoice_payment_ref or '.'"/>
+                    <noSocio/>
+                    <centroCostos/>
+                    <iniPerLiq/>
+                    <finPerLiq/>
+                    <retencion1/>
+                    <retencion2/>
+                    <email t-esc="'roberto.otero@tauenergia.com'"/>
+                </FacturaFemsa>
+            </Documento>
+        </Addenda>
+    </template>
+    <record id="femsa" model="ir.ui.view">
+        <field name="l10n_mx_edi_addenda_flag">True</field>
+    </record>
+</odoo>

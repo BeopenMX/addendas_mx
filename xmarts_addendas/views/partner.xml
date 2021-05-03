@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="addendas_fields_in_res_partner_form" model="ir.ui.view">
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="l10n_mx_edi.res_partner_form_inherit_l10n_mx_edi"/>
+        <field name="arch" type="xml">
+            <data>
+                <xpath expr="//field[@name='l10n_mx_edi_addenda']" position="after">
+                    <field name="nombre_addenda" attrs="{'required' : [('l10n_mx_edi_addenda', '!=', False)]}"/>
+                    <field name="num_proovedor"
+                           attrs="{'invisible' : [('nombre_addenda', '!=', 'femsa')],'required' : [('nombre_addenda', '=', 'femsa')]}"/>
+
+                    <!--soriana -->
+                    <field name="shipping_number_provider"
+                           attrs="{'invisible' : [('nombre_addenda', '=', 'femsa')],'required' : [('nombre_addenda', '=', 'soriana')]}"/>
+                    <field name="shipping_number_store"
+                           attrs="{'invisible' : [('nombre_addenda', '!=', 'soriana')],'required' : [('nombre_addenda', '=', 'soriana')]}"/>
+                    <field name="shipping_number_cedis"
+                           attrs="{'invisible' : [('nombre_addenda', '!=', 'soriana')],'required' : [('nombre_addenda', '=', 'soriana')]}"/>
+
+                </xpath>
+                <xpath expr="//field[@name='child_ids']//form//field[@name='mobile']" position="after">
+                    <field name="parent_l10n_mx_edi_addenda" readonly="1"/>
+                    <field name="nombre_addenda" attrs="{'required' : [('parent_l10n_mx_edi_addenda', '!=', False)]}"/>
+                    <field name="num_proovedor"
+                           attrs="{'invisible' : [('nombre_addenda', '!=', 'femsa')],'required' : [('nombre_addenda', '=', 'femsa')]}"/>
+                    <!--soriana -->
+                    <field name="shipping_number_provider"
+                           attrs="{'invisible' : [('nombre_addenda', '=', 'femsa')],'required' : [('nombre_addenda', '=', 'soriana')]}"/>
+                    <field name="shipping_number_store"
+                           attrs="{'invisible' : [('nombre_addenda', '!=', 'soriana')],'required' : [('nombre_addenda', '=', 'soriana')]}"/>
+                    <field name="shipping_number_cedis"
+                           attrs="{'invisible' : [('nombre_addenda', '!=', 'soriana')],'required' : [('nombre_addenda', '=', 'soriana')]}"/>
+                </xpath>
+            </data>
+        </field>
+    </record>
+</odoo>

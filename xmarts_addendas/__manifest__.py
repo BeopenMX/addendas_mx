@@ -1,0 +1,21 @@
+{
+    'name': 'Xmarts Addendas',
+    'version': '13.1',
+    'category': '',
+    'summary': 'Modulo para Agregar Addendas a la Factura.',
+    'author': 'Xmarts',
+    'depends': ['account','contacts','l10n_mx_edi'],
+    'data': [
+        'views/partner.xml',
+        'views/account_invoice.xml',
+        'views/soriana_cfdiv33_update.xml',
+        'data/femsa.xml',
+        'data/soriana.xml',
+        'report/invoice_soriana.xml',
+    ],
+    'demo': [],
+    'installable': True,
+    'auto_install': False,
+    'application': True,
+    'license': 'LGPL-3',
+}

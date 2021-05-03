@@ -1,0 +1,160 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* xmarts_addendas
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-05-04 07:53+0000\n"
+"PO-Revision-Date: 2020-05-04 07:53+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: xmarts_addendas
+#: model_terms:ir.ui.view,arch_db:xmarts_addendas.femsa
+msgid "01"
+msgstr "01"
+
+#. module: xmarts_addendas
+#: model_terms:ir.ui.view,arch_db:xmarts_addendas.invoice_addendas_inherit_customer_fields
+msgid "<span>Item</span>"
+msgstr "<span>Artículo</span>"
+
+#. module: xmarts_addendas
+#: model_terms:ir.ui.view,arch_db:xmarts_addendas.invoice_addendas_inherit_customer_fields
+msgid "<strong>Customer Code:</strong>"
+msgstr "<strong>Referencia del Cliente:</strong>"
+
+#. module: xmarts_addendas
+#: model_terms:ir.ui.view,arch_db:xmarts_addendas.invoice_addendas_inherit_customer_fields
+msgid "<strong>Num.Provider:</strong>"
+msgstr "<strong>Num.Proovedor:</strong>"
+
+#. module: xmarts_addendas
+#: model_terms:ir.ui.view,arch_db:xmarts_addendas.invoice_addendas_inherit_customer_fields
+msgid "<strong>RFC:</strong>"
+msgstr "<strong>RFC:</strong>"
+
+#. module: xmarts_addendas
+#: model_terms:ir.ui.view,arch_db:xmarts_addendas.invoice_addendas_inherit_customer_fields
+msgid "<strong>Send To:</strong>"
+msgstr "<strong>Enviar a:</strong>"
+
+#. module: xmarts_addendas
+#: model_terms:ir.ui.view,arch_db:xmarts_addendas.invoice_addendas_inherit_customer_fields
+msgid "<strong>Shipping Address:</strong>"
+msgstr "<strong>Dirección envío:</strong>"
+
+#. module: xmarts_addendas
+#: model:ir.model.fields,help:xmarts_addendas.field_res_partner__parent_l10n_mx_edi_addenda
+#: model:ir.model.fields,help:xmarts_addendas.field_res_users__parent_l10n_mx_edi_addenda
+msgid "A view representing the addenda"
+msgstr "Vista que representa esta Addenda"
+
+#. module: xmarts_addendas
+#: model:ir.model.fields,field_description:xmarts_addendas.field_res_partner__parent_l10n_mx_edi_addenda
+#: model:ir.model.fields,field_description:xmarts_addendas.field_res_users__parent_l10n_mx_edi_addenda
+msgid "Addenda"
+msgstr "Addenda"
+
+#. module: xmarts_addendas
+#: model:ir.model.fields.selection,name:xmarts_addendas.selection__account_move__tipo_bulto__2
+msgid "Bolsa"
+msgstr "Bolsa"
+
+#. module: xmarts_addendas
+#: model:ir.model.fields.selection,name:xmarts_addendas.selection__account_move__tipo_bulto__1
+msgid "Cajas"
+msgstr "Cajas"
+
+#. module: xmarts_addendas
+#: model:ir.model,name:xmarts_addendas.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: xmarts_addendas
+#: model_terms:ir.ui.view,arch_db:xmarts_addendas.invoice_addendas_inherit_customer_fields
+msgid "Customer Data"
+msgstr "Datos del Cliente"
+
+#. module: xmarts_addendas
+#: model_terms:ir.ui.view,arch_db:xmarts_addendas.add_addendas_fields
+msgid "Datos para Addenda"
+msgstr "Datos para Addenda"
+
+#. module: xmarts_addendas
+#: model:ir.model.fields,field_description:xmarts_addendas.field_account_move__date_of_deli
+msgid "Fecha Entrega Mercancia"
+msgstr "Fecha Entrega Mercancia"
+
+#. module: xmarts_addendas
+#: model:ir.model.fields.selection,name:xmarts_addendas.selection__res_partner__nombre_addenda__femsa
+msgid "Femsa"
+msgstr "Femsa"
+
+#. module: xmarts_addendas
+#: model:ir.model.fields,field_description:xmarts_addendas.field_account_move__cita
+msgid "Folio de cita"
+msgstr "Folio de cita"
+
+#. module: xmarts_addendas
+#: model:ir.model,name:xmarts_addendas.model_account_move
+msgid "Journal Entries"
+msgstr "Asientos contables"
+
+#. module: xmarts_addendas
+#: model:ir.model.fields,field_description:xmarts_addendas.field_res_partner__shipping_number_cedis
+#: model:ir.model.fields,field_description:xmarts_addendas.field_res_users__shipping_number_cedis
+msgid "No. de Cedis"
+msgstr "No. de Cedis"
+
+#. module: xmarts_addendas
+#: model:ir.model.fields,field_description:xmarts_addendas.field_res_partner__num_proovedor
+#: model:ir.model.fields,field_description:xmarts_addendas.field_res_partner__shipping_number_provider
+#: model:ir.model.fields,field_description:xmarts_addendas.field_res_users__num_proovedor
+#: model:ir.model.fields,field_description:xmarts_addendas.field_res_users__shipping_number_provider
+msgid "No. de Proovedor"
+msgstr "No. de Proovedor"
+
+#. module: xmarts_addendas
+#: model:ir.model.fields,field_description:xmarts_addendas.field_account_move__num_remision
+msgid "No. de Remisión"
+msgstr "No. de Remisión"
+
+#. module: xmarts_addendas
+#: model:ir.model.fields,field_description:xmarts_addendas.field_res_partner__shipping_number_store
+#: model:ir.model.fields,field_description:xmarts_addendas.field_res_users__shipping_number_store
+msgid "No. de Tienda"
+msgstr "No. de Tienda"
+
+#. module: xmarts_addendas
+#: model:ir.model.fields,field_description:xmarts_addendas.field_account_move__num_sociedad
+msgid "No. de sociedad"
+msgstr "No. de sociedad"
+
+#. module: xmarts_addendas
+#: model:ir.model.fields,field_description:xmarts_addendas.field_account_move__nombre_addenda
+#: model:ir.model.fields,field_description:xmarts_addendas.field_res_partner__nombre_addenda
+#: model:ir.model.fields,field_description:xmarts_addendas.field_res_users__nombre_addenda
+msgid "Nombre de Addenda"
+msgstr "Nombre de Addenda"
+
+#. module: xmarts_addendas
+#: model:ir.model.fields.selection,name:xmarts_addendas.selection__res_partner__nombre_addenda__soriana
+msgid "Soriana"
+msgstr "Soriana"
+
+#. module: xmarts_addendas
+#: model:ir.model.fields,field_description:xmarts_addendas.field_account_move__tipo_bulto
+msgid "Tipo de Bulto"
+msgstr "Tipo de Bulto"
+
+#. module: xmarts_addendas
+#: model_terms:ir.ui.view,arch_db:xmarts_addendas.soriana
+msgid "true"
+msgstr "true"
