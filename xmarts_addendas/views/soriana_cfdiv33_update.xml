@@ -2,7 +2,7 @@
 <odoo>
     <template id="cfdiv33_soriana_addenda" inherit_id="l10n_mx_edi.cfdiv33">
         <xpath expr="//*[name()='cfdi:Concepto']" position="attributes">
-            <attribute name="t-att-NoIdentificacion">record._get_string_cfdi(line.product_id.barcode or '') if record.nombre_addenda == 'soriana' else record._get_string_cfdi(line.product_id.default_code or '')</attribute>
+            <attribute name="t-att-NoIdentificacion">format_string(line.product_id.barcode or '') if record.nombre_addenda == 'soriana' else format_string(line.product_id.default_code or '')</attribute>
         </xpath>
     </template>
 </odoo>
