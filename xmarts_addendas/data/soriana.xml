@@ -5,15 +5,15 @@
 
 
             <t t-set="currency_number" t-value="{'MXN': '1', 'USD': '2','EUR': '3'}"/>
-            <t t-set="xml" t-value="record.l10n_mx_edi_get_xml_etree()"/>
-            <t t-set="serie" t-value="xml.get('Serie')"/>
-            <t t-set="folio" t-value="xml.get('Folio')"/>
-            <t t-set="subtotal" t-value="xml.get('SubTotal')"/>
-            <t t-set="descuentos" t-value="xml.get('Descuento','0.00')"/>
-            <t t-set="total" t-value="xml.get('Total','0.00')"/>
+            <t t-set="xml" t-value="env['account.edi.format']._l10n_mx_edi_get_invoice_cfdi_values(record)"/>
+            <t t-set="serie" t-value="xml.get('serie_number')"/>
+            <t t-set="folio" t-value="xml.get('folio_number')"/>
+            <t t-set="subtotal" t-value="xml.get('total_amount_untaxed_wo_discount')"/>
+            <t t-set="descuentos" t-value="xml.get('total_amount_untaxed_discount','0.00')"/>
+            <t t-set="total" t-value="record.amount_total"/>
             <t t-set="sdato" t-value="'FaltaDato'"/>
-            <t t-set="iva" t-value="xml.Impuestos.get('TotalImpuestosTrasladados','0.00')"/>
-            <t t-set="otros_impuestos" t-value="xml.Impuestos.get('TotalImpuestosRetenidos',False)"/>
+            <t t-set="iva" t-value="xml.get('total_tax_details_transferred','0.00')"/>
+            <t t-set="otros_impuestos" t-value="xml.get('total_tax_details_withholding',False)"/>
             <t t-if="otros_impuestos and subtotal">
                 <t t-set="total" t-value="float(subtotal) + float(iva)"/>
             </t>
@@ -45,7 +45,7 @@
                 <t t-set="tagiva" t-value="0"/>
                 <t t-set="tagieps" t-value="0"/>
                 <t t-foreach="record.line_ids" t-as="rec">
-                    <t t-foreach="rec.tag_ids" t-as="tg">
+                    <t t-foreach="rec.tax_tag_ids" t-as="tg">
                         <!--<t t-if="tg.name == 'IVA'">-->
                         <!--  <t t-set="tagiva" t-value="rec.price_total"/>-->
                         <!--</t>-->
