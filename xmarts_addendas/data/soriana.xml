@@ -63,7 +63,7 @@
                 <t t-set="pruebafecha" t-value="record.date_of_deli"
                    t-options="{&quot;format&quot;: &quot;yyyy-MM-dd&quot;}"/>
                 <FechaEntregaMercancia t-esc="str(pruebafecha)+'T'+'00:00:00'"/>
-                <Cita t-field="record.cita"/>
+                <FolioNotaEntrada t-field="record.cita"/>
             </Remision>
 
             <Pedidos Id="Pedidos1" RowOrder="1">
